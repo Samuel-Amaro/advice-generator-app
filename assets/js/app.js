@@ -8,6 +8,6 @@ btnGenerator.addEventListener("pointerdown", () => {
     getAdvice().then((slip) => {
         setTextAdvice(slip.id, slip.advice);
     }).catch((reason) => {
-        alert(`Falha ao carregar conselho. Por favor tente novamente. ${reason}`);
+        alert(`Falha ao carregar novo conselho. Por favor tente novamente.`);
     });
 });

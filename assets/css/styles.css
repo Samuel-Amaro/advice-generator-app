@@ -38,6 +38,7 @@ body{
     justify-content: center;
     padding: 40px 18px 0 18px;
     border-radius: 10px;
+    max-width: 345px;
 }
 
 .advice-alert{
@@ -56,7 +57,7 @@ body{
     color: var(--light-cyan);
     font-weight: 800;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -91,6 +92,7 @@ body{
     box-shadow: 0px 0px 35px 2px var(--neon-green);
 }
 
+/**breakpoint mobile**/
 @media screen and (max-width: 375px) {
     .block-main{
         margin: 0 15px;
@@ -98,8 +100,16 @@ body{
     }
 }
 
-@media screen and (min-width: 376px) {
+/**breakpoint tables e desktop**/
+@media screen and (min-width: 540px) {
     .block-main{
-        max-width: 375px;
+        max-width: 540px;
+        padding: 48px 42px 0 42px;
     }
+    
+    .advice{ margin-bottom: 30px; }
+
+    .advice{ font-size: 1.7rem; }
+
+    .advice-alert{ font-size: 0.82rem; }
 }
