@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <meta name="author" content="Samuel Amaro Do Nascimento"/>
+  <meta name="description" content="Advice generator App"/>
+  <meta name="keywords" content="HTML5, CSS3, JS, es6, exe"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <link rel="stylesheet" href="./assets/css/normalize.css"/>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+
+  <main class="block-main">
+    <p class="advice-alert">Advice #<span class="advice-id">100</span></p>
+    <h1 class="advice"><span class="quote-elem">&OpenCurlyDoubleQuote;</span><span class="advice__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="quote-elem">&CloseCurlyDoubleQuote;</span></h1>
+    <div class="ilustration">
+      <picture>
+        <source media="(max-width: 375px)" srcset="./assets/images/pattern-divider-mobile.svg"/>
+        <source media="(min-width: 900px)" srcset="./assets/images/pattern-divider-desktop.svg"/>
+        <img src="./assets/images/pattern-divider-mobile.svg" alt=""/>
+      </picture>
+    </div>
+    <button class="btn-generator-advice" title="Clique para gerar novo conselho">
+      <img src="./assets/images/icon-dice.svg" alt=""/>
+    </button>
+  </main>
+
+  <script src="./assets/js/app.js" type="module"></script>
+
+</body>
+</html>
