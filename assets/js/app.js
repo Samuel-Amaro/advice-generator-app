@@ -1,6 +1,6 @@
 "use strict";
 
-import {getAdvice, setTextAdvice} from "./script.js";
+import {getAdvice, setTextAdvice, startAdvice} from "./script.js";
 
 let btnGenerator = document.querySelector(".btn-generator-advice");
 
@@ -11,3 +11,5 @@ btnGenerator.addEventListener("pointerdown", () => {
         alert(`Falha ao carregar novo conselho. Por favor tente novamente.`);
     });
 });
+
+startAdvice();
